@@ -1,0 +1,32 @@
+{
+  "Wheat": {
+    "Aphids": {
+      "image_path": "assets/wheat_aphids.jpg",
+      "symptoms": "Leaves turn yellow and curl downwards. Sticky honeydew on leaves.",
+      "chemical_remedy": "Spray Imidacloprid 17.8% SL at 1 ml/Liter of water.",
+      "organic_remedy": "Spray Neem Oil (10,000 ppm) at 3-5 ml/Liter with mild soap."
+    },
+    "Termites": {
+      "image_path": "assets/wheat_termites.jpg",
+      "symptoms": "Plants dry up completely from the base. Roots are eaten.",
+      "chemical_remedy": "Seed treatment with Chlorpyriphos 20 EC before sowing.",
+      "organic_remedy": "Apply well-decomposed farmyard manure mixed with Trichoderma."
+    }
+  },
+  "Cotton": {
+    "Pink Bollworm": {
+      "image_path": "assets/cotton_bollworm.jpg",
+      "symptoms": "Flowers fail to open (rosette flower). Holes in bolls.",
+      "chemical_remedy": "Spray Quinalphos 25 EC or Thiodicarb 75 WP.",
+      "organic_remedy": "Install Pheromone traps (5 per acre) to catch adult moths."
+    }
+  },
+  "Rice": {
+    "Stem Borer": {
+      "image_path": "assets/rice_stem_borer.jpg",
+      "symptoms": "Central shoot dries up (dead heart) in vegetative stage.",
+      "chemical_remedy": "Apply Cartap Hydrochloride 4G at 10 kg/acre.",
+      "organic_remedy": "Release Trichogramma japonicum egg parasitoids."
+    }
+  }
+}
