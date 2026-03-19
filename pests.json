@@ -1,32 +1,70 @@
 {
   "Wheat": {
     "Aphids": {
-      "image_path": "assets/wheat_aphids.jpg",
-      "symptoms": "Leaves turn yellow and curl downwards. Sticky honeydew on leaves.",
-      "chemical_remedy": "Spray Imidacloprid 17.8% SL at 1 ml/Liter of water.",
-      "organic_remedy": "Spray Neem Oil (10,000 ppm) at 3-5 ml/Liter with mild soap."
+      "simple_desc_en": "Small green insects that suck sap from leaves.",
+      "simple_desc_hi": "छोटे हरे कीड़े जो पत्तों का रस चूसकर पौधे को कमजोर करते हैं।",
+      "symptoms_en": "Yellowing and curling of leaves.",
+      "symptoms_hi": "पत्तियों का पीला पड़ना और नीचे की ओर मुड़ना।",
+      "chemical_remedy_en": "Spray Imidacloprid 17.8% SL (1ml/L).",
+      "chemical_remedy_hi": "इमिडाक्लोप्रिड 17.8% SL (1ml/L) का छिड़काव करें।",
+      "organic_remedy_en": "Spray Neem oil solution.",
+      "organic_remedy_hi": "नीम के तेल के घोल का प्रयोग करें।"
     },
-    "Termites": {
-      "image_path": "assets/wheat_termites.jpg",
-      "symptoms": "Plants dry up completely from the base. Roots are eaten.",
-      "chemical_remedy": "Seed treatment with Chlorpyriphos 20 EC before sowing.",
-      "organic_remedy": "Apply well-decomposed farmyard manure mixed with Trichoderma."
-    }
-  },
-  "Cotton": {
-    "Pink Bollworm": {
-      "image_path": "assets/cotton_bollworm.jpg",
-      "symptoms": "Flowers fail to open (rosette flower). Holes in bolls.",
-      "chemical_remedy": "Spray Quinalphos 25 EC or Thiodicarb 75 WP.",
-      "organic_remedy": "Install Pheromone traps (5 per acre) to catch adult moths."
+    "Yellow Rust": {
+      "simple_desc_en": "Fungal disease showing yellow stripes on leaves.",
+      "simple_desc_hi": "फफूंद रोग जिससे पत्तों पर पीली धारियां बन जाती हैं।",
+      "symptoms_en": "Yellow powdery deposits in rows.",
+      "symptoms_hi": "पत्तियों पर पीले रंग का पाउडर जैसा जमाव।",
+      "chemical_remedy_en": "Spray Propiconazole 25 EC (1ml/L).",
+      "chemical_remedy_hi": "प्रोपिकोनाज़ोल 25 EC (1ml/L) का छिड़काव करें।",
+      "organic_remedy_en": "Use rust-resistant varieties.",
+      "organic_remedy_hi": "रोग-प्रतिरोधी किस्मों का चुनाव करें।"
     }
   },
   "Rice": {
     "Stem Borer": {
-      "image_path": "assets/rice_stem_borer.jpg",
-      "symptoms": "Central shoot dries up (dead heart) in vegetative stage.",
-      "chemical_remedy": "Apply Cartap Hydrochloride 4G at 10 kg/acre.",
-      "organic_remedy": "Release Trichogramma japonicum egg parasitoids."
+      "simple_desc_en": "Larvae that eat the stem from inside.",
+      "simple_desc_hi": "तने को अंदर से खाने वाला इल्ली जैसा कीड़ा।",
+      "symptoms_en": "Drying of central shoot (Dead Heart).",
+      "symptoms_hi": "बीच के तने का सूख जाना (डेड हार्ट)।",
+      "chemical_remedy_en": "Apply Cartap Hydrochloride 4G (10kg/acre).",
+      "chemical_remedy_hi": "कारटैप हाइड्रोक्लोराइड 4G (10kg/acre) डालें।",
+      "organic_remedy_en": "Use Pheromone traps.",
+      "organic_remedy_hi": "फेरोमोन ट्रैप का उपयोग करें।"
+    },
+    "Brown Plant Hopper": {
+      "simple_desc_en": "Insects that cause 'Hopper Burn' in rice fields.",
+      "simple_desc_hi": "धान के पौधों को सुखाने वाला भूरा फुदका कीड़ा।",
+      "symptoms_en": "Circular patches of dried yellow plants.",
+      "symptoms_hi": "खेत में पौधों का गोल घेरे में सूखना।",
+      "chemical_remedy_en": "Spray Pymetrozine 50 WG (0.6g/L).",
+      "chemical_remedy_hi": "पाइमेट्रोज़िन 50 WG (0.6g/L) का स्प्रे करें।",
+      "organic_remedy_en": "Drain the field water for 3-4 days.",
+      "organic_remedy_hi": "खेत का पानी 3-4 दिनों के लिए निकाल दें।"
+    }
+  },
+  "Sugarcane": {
+    "Red Rot": {
+      "simple_desc_en": "Serious fungal disease of sugarcane stalks.",
+      "simple_desc_hi": "गन्ने के तने का कैंसर जैसा लाल सड़न रोग।",
+      "symptoms_en": "Internal reddening of the pith with white patches.",
+      "symptoms_hi": "गन्ने को चीरने पर अंदर लाल रंग और सफेद धब्बे दिखना।",
+      "chemical_remedy_en": "Sett treatment with Carbendazim.",
+      "chemical_remedy_hi": "कार्बेन्डाजिम से बीजों (सेट्स) का उपचार करें।",
+      "organic_remedy_en": "Crop rotation and healthy seed selection.",
+      "organic_remedy_hi": "फसल चक्र अपनाएं और स्वस्थ बीज चुनें।"
+    }
+  },
+  "Tomato": {
+    "Early Blight": {
+      "simple_desc_en": "Fungal spots on leaves starting from bottom.",
+      "simple_desc_hi": "टमाटर के पत्तों पर नीचे से शुरू होने वाले काले धब्बे।",
+      "symptoms_en": "Concentric rings (target spots) on leaves.",
+      "symptoms_hi": "पत्तियों पर गोल छल्लेदार काले धब्बे।",
+      "chemical_remedy_en": "Spray Mancozeb (2g/L).",
+      "chemical_remedy_hi": "मेनकोजेब (2g/L) का छिड़काव करें।",
+      "organic_remedy_en": "Mulching and drip irrigation.",
+      "organic_remedy_hi": "मल्चिंग करें और ड्रिप सिंचाई का उपयोग करें।"
     }
   }
 }
