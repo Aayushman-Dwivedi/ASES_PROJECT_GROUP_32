@@ -1,0 +1,60 @@
+{
+  "Tractor": {
+    "Engine Overheating": {
+      "description_en": "The engine temperature rises beyond the normal operating range.",
+      "description_hi": "इंजन का तापमान सामान्य से बहुत अधिक बढ़ जाना।",
+      "symptoms_en": "Steam from radiator, temperature gauge in red zone, loss of power.",
+      "symptoms_hi": "रेडिएटर से भाप निकलना, तापमान सुई का लाल निशान पर होना, ताकत कम होना।",
+      "diagnosis_en": "Low coolant level, broken fan belt, or clogged radiator fins.",
+      "diagnosis_hi": "कूलेंट कम होना, फैन बेल्ट का टूटना, या रेडिएटर में कचरा फंसना।",
+      "solution_en": "Refill coolant, check/replace fan belt, clean radiator with air/water pressure.",
+      "solution_hi": "कूलेंट भरें, फैन बेल्ट बदलें, रेडिएटर को प्रेशर से साफ करें।"
+    },
+    "Clutch Slipping": {
+      "description_en": "Engine revs up but the tractor doesn't gain speed proportionally.",
+      "description_hi": "इंजन रेस लेता है लेकिन ट्रैक्टर उस हिसाब से आगे नहीं बढ़ता।",
+      "symptoms_en": "Burning smell, difficulty in shifting gears, low pulling power.",
+      "symptoms_hi": "जलने की गंध, गियर बदलने में दिक्कत, खिंचाई की शक्ति कम होना।",
+      "diagnosis_en": "Worn out clutch plate or incorrect pedal free-play.",
+      "diagnosis_hi": "क्लच प्लेट का घिस जाना या पेडल की सेटिंग गलत होना।",
+      "solution_en": "Adjust clutch pedal play or replace the clutch assembly.",
+      "solution_hi": "क्लच पेडल की सेटिंग ठीक करें या क्लच असेंबली बदलें।"
+    }
+  },
+  "Combine Harvester": {
+    "Grain Loss in Tailings": {
+      "description_en": "Excessive grain being discharged along with the straw at the rear.",
+      "description_hi": "पीछे भूसे के साथ अनाज के दानों का बाहर निकल जाना।",
+      "symptoms_en": "Visible grains on the ground behind the harvester.",
+      "symptoms_hi": "मशीन के पीछे जमीन पर दाने बिखरे हुए दिखना।",
+      "diagnosis_en": "Improper sieve adjustment or high blower speed.",
+      "diagnosis_hi": "छलनी (Sieve) की सेटिंग गलत होना या पंखे की रफ़्तार बहुत तेज़ होना।",
+      "solution_en": "Adjust sieve clearance and reduce blower fan speed.",
+      "solution_hi": "छलनी के गैप को सेट करें और ब्लोअर की रफ़्तार कम करें।"
+    }
+  },
+  "Rotavator": {
+    "Excessive Vibration": {
+      "description_en": "Heavy shaking of the machine during field operation.",
+      "description_hi": "खेत में काम करते समय मशीन का बहुत अधिक कांपना या हिलना।",
+      "symptoms_en": "Noisy operation and loose nuts/bolts.",
+      "symptoms_hi": "काम करते समय तेज़ आवाज़ और नट-बोल्ट का ढीला होना।",
+      "diagnosis_en": "Bent blades or worn out universal joint (U-Joint).",
+      "diagnosis_hi": "ब्लेड का मुड़ जाना या यू-जॉइंट (U-Joint) का घिस जाना।",
+      "solution_en": "Replace damaged blades and lubricate/replace the U-joint cross.",
+      "solution_hi": "मुड़े हुए ब्लेड बदलें और यू-जॉइंट को ग्रीस करें या बदलें।"
+    }
+  },
+  "Drip Irrigation": {
+    "Emitter Clogging": {
+      "description_en": "Water flow stops or reduces in the drip laterals.",
+      "description_hi": "ड्रिप की नलियों से पानी निकलना बंद या कम हो जाना।",
+      "symptoms_en": "Dry patches in the field, uneven plant growth.",
+      "symptoms_hi": "खेत में सूखे धब्बे दिखना, पौधों की बढ़वार बराबर न होना।",
+      "diagnosis_en": "Algae growth or salt deposition inside emitters.",
+      "diagnosis_hi": "ड्रिपर के अंदर काई जमना या खारे पानी का नमक जम जाना।",
+      "solution_en": "Acid treatment (HCl/Nitric) or flush the lateral lines with high pressure.",
+      "solution_hi": "एसिड ट्रीटमेंट करें या लेटरल पाइप को हाई प्रेशर से फ्लश करें।"
+    }
+  }
+}
