@@ -1,70 +1,169 @@
 {
-  "Wheat": {
-    "Aphids": {
-      "simple_desc_en": "Small green insects that suck sap from leaves.",
-      "simple_desc_hi": "छोटे हरे कीड़े जो पत्तों का रस चूसकर पौधे को कमजोर करते हैं।",
-      "symptoms_en": "Yellowing and curling of leaves.",
-      "symptoms_hi": "पत्तियों का पीला पड़ना और नीचे की ओर मुड़ना।",
-      "chemical_remedy_en": "Spray Imidacloprid 17.8% SL (1ml/L).",
-      "chemical_remedy_hi": "इमिडाक्लोप्रिड 17.8% SL (1ml/L) का छिड़काव करें।",
-      "organic_remedy_en": "Spray Neem oil solution.",
-      "organic_remedy_hi": "नीम के तेल के घोल का प्रयोग करें।"
+    "Wheat": {
+        "Yellow Rust": {
+            "simple_desc_en": "A fungal disease that forms yellow stripes on leaves, severely affecting crop yield.",
+            "simple_desc_hi": "यह एक फफूंद जनित रोग है जिससे पत्तियों पर पीली धारियां बन जाती हैं और पैदावार घट जाती है।",
+            "simple_desc_bn": "এটি একটি ছত্রাকজনিত রোগ যা পাতায় হলুদ ডোরা তৈরি করে এবং ফলন মারাত্মকভাবে হ্রাস করে।",
+            "simple_desc_te": "ఇది ఆకులపై పసుపు చారలను ఏర్పరిచే శిలీంధ్ర వ్యాధి, పంట దిగుబడిని తీవ్రంగా ప్రభావితం చేస్తుంది.",
+            "simple_desc_mr": "हा एक बुरशीजन्य आजार आहे ज्यामुळे पानांवर पिवळे पट्टे तयार होतात आणि पीक उत्पादनावर गंभीर परिणाम होतो.",
+            "simple_desc_ta": "இது இலைகளில் மஞ்சள் கோடுகளை உருவாக்கும் ஒரு பூஞ்சை நோயாகும், இது பயிர் விளைச்சலை கடுமையாக பாதிக்கிறது.",
+            "simple_desc_gu": "આ એક ફૂગનો રોગ છે જે પાંદડા પર પીળા પટ્ટાઓ બનાવે છે અને પાકની ઉપજને ગંભીર અસર કરે છે.",
+            "simple_desc_kn": "ಇದು ಎಲೆಗಳ ಮೇಲೆ ಹಳದಿ ಪಟ್ಟೆಗಳನ್ನು ರೂಪಿಸುವ ಶಿಲೀಂಧ್ರ ರೋಗವಾಗಿದ್ದು, ಇಳುವರಿಯನ್ನು ತೀವ್ರವಾಗಿ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ.",
+            "simple_desc_or": "ଏହା ଏକ କବକ ଜନିତ ରୋଗ ଯାହା ପତ୍ରରେ ହଳଦିଆ ଦାଗ ସୃଷ୍ଟି କରେ ଏବଂ ଫସଲ ଅମଳକୁ ପ୍ରଭାବିତ କରେ।",
+            "simple_desc_ml": "ഇലകളിൽ മഞ്ഞ വരകൾ ഉണ്ടാക്കുന്ന ഒരു ഫംഗസ് രോഗമാണിത്, വിളവിനെ ഗുരുതരമായി ബാധിക്കുന്നു.",
+            "simple_desc_pa": "ਇਹ ਇੱਕ ਉੱਲੀ ਦਾ ਰੋਗ ਹੈ ਜੋ ਪੱਤਿਆਂ 'ਤੇ ਪੀਲੀਆਂ ਧਾਰੀਆਂ ਬਣਾਉਂਦਾ ਹੈ ਅਤੇ ਝਾੜ ਨੂੰ ਬੁਰੀ ਤਰ੍ਹਾਂ ਪ੍ਰਭਾਵਿਤ ਕਰਦਾ ਹੈ।",
+            
+            "symptoms_en": "Yellowish, powdery pustules arranged in parallel stripes on adult leaves.",
+            "symptoms_hi": "पत्तियों पर पीले रंग के पाउडर जैसे धब्बे समानांतर धारियों में दिखाई देते हैं।",
+            "symptoms_bn": "পরিণত পাতায় সমান্তরাল ডোরায় সাজানো হলুদ রঙের গুঁড়োর মতো দাগ।",
+            "symptoms_te": "వయోజన ఆకులపై సమాంతర చారలలో అమర్చబడిన పసుపు, పొడి లాంటి మచ్చలు.",
+            "symptoms_mr": "प्रौढ पानांवर समांतर पट्ट्यांमध्ये पिवळसर, पावडरसारखे डाग दिसतात.",
+            "symptoms_ta": "முதிர்ந்த இலைகளில் இணையான கோடுகளில் மஞ்சள் நிற பொடி போன்ற புள்ளிகள்.",
+            "symptoms_gu": "પુખ્ત પાંદડાઓ પર સમાંતર પટ્ટાઓમાં ગોઠવાયેલા પીળાશ પડતા, પાવડર જેવા ડાઘ.",
+            "symptoms_kn": "ಪ್ರೌಢ ಎಲೆಗಳ ಮೇಲೆ ಸಮಾನಾಂತರ ಪಟ್ಟೆಗಳಲ್ಲಿ ಜೋಡಿಸಲಾದ ಹಳದಿ, ಪುಡಿಯಂತಹ ಕಲೆಗಳು.",
+            "symptoms_or": "ବୟସ୍କ ପତ୍ରରେ ସମାନ୍ତରାଳ ଧାଡ଼ିରେ ଥିବା ହଳଦିଆ, ପାଉଡର ଭଳି ଦାଗ।",
+            "symptoms_ml": "മുതിർന്ന ഇലകളിൽ സമാന്തര വരകളായി ക്രമീകരിച്ചിരിക്കുന്ന മഞ്ഞനിറത്തിലുള്ള പൊടി പോലുള്ള പാടുകൾ.",
+            "symptoms_pa": "ਬਾਲਗ ਪੱਤਿਆਂ 'ਤੇ ਸਮਾਨਾਂਤਰ ਧਾਰੀਆਂ ਵਿੱਚ ਪੀਲੇ, ਪਾਊਡਰ ਵਰਗੇ ਧੱਬੇ।",
+            
+            "organic_remedy_en": "Use disease-resistant seed varieties and spray Neem oil (5%) mixed with water.",
+            "organic_remedy_hi": "रोग प्रतिरोधी बीजों का उपयोग करें और 5% नीम के तेल का छिड़काव करें।",
+            "organic_remedy_bn": "রোগ প্রতিরোধী বীজের জাত ব্যবহার করুন এবং জলের সাথে ৫% নিম তেল মিশিয়ে স্প্রে করুন।",
+            "organic_remedy_te": "వ్యాధి నిరోధక విత్తన రకాలను ఉపయోగించండి మరియు నీటితో కలిపిన వేప నూనె (5%) పిచికారీ చేయండి.",
+            "organic_remedy_mr": "रोगप्रतिबंधक बियाणे वापरा आणि पाण्यात मिसळलेल्या कडुनिंबाच्या तेलाची (५%) फवारणी करा.",
+            "organic_remedy_ta": "நோய் எதிர்ப்பு சக்தி கொண்ட விதைகளைப் பயன்படுத்தவும் மற்றும் வேப்ப எண்ணெயை (5%) தெளிக்கவும்.",
+            "organic_remedy_gu": "રોગ પ્રતિકારક બીજનો ઉપયોગ કરો અને 5% લીમડાના તેલનો છંટકાવ કરો.",
+            "organic_remedy_kn": "ರೋಗ ನಿರೋಧಕ ಬೀಜಗಳನ್ನು ಬಳಸಿ ಮತ್ತು ನೀರಿನೊಂದಿಗೆ ಬೆರೆಸಿದ ಬೇವಿನ ಎಣ್ಣೆಯನ್ನು (5%) ಸಿಂಪಡಿಸಿ.",
+            "organic_remedy_or": "ରୋଗ ପ୍ରତିରୋଧକ ବିହନ ବ୍ୟବହାର କରନ୍ତୁ ଏବଂ ନିମ୍ବ ତେଲ (5%) ସ୍ପ୍ରେ କରନ୍ତୁ।",
+            "organic_remedy_ml": "രോഗപ്രതിരോധ ശേഷിയുള്ള വിത്തുകൾ ഉപയോഗിക്കുക, വേപ്പെണ്ണ (5%) തളിക്കുക.",
+            "organic_remedy_pa": "ਰੋਗ ਪ੍ਰਤੀਰੋਧਕ ਬੀਜਾਂ ਦੀ ਵਰਤੋਂ ਕਰੋ ਅਤੇ 5% ਨਿੰਮ ਦੇ ਤੇਲ ਦਾ ਛਿੜਕਾਅ ਕਰੋ।",
+            
+            "chemical_remedy_en": "Spray Propiconazole 25 EC at 1 ml/liter of water as soon as symptoms appear.",
+            "chemical_remedy_hi": "लक्षण दिखते ही प्रोपीकोनाजोल 25 EC का 1 मिली/लीटर पानी में घोलकर छिड़काव करें।",
+            "chemical_remedy_bn": "লক্ষণ দেখা দিলেই প্রতি লিটার জলে ১ মিলি প্রোপিকোনাজোল ২৫ ইসি মিশিয়ে স্প্রে করুন।",
+            "chemical_remedy_te": "లక్షణాలు కనిపించిన వెంటనే 1 మి.లీ/లీటరు నీటికి ప్రొపికోనజోల్ 25 EC పిచికారీ చేయండి.",
+            "chemical_remedy_mr": "लक्षणे दिसताच 1 मिली/लिटर पाण्यात प्रोपिकोनाझोल 25 EC फवारणी करा.",
+            "chemical_remedy_ta": "அறிகுறிகள் தோன்றியவுடன் 1 மி.லி/லிட்டர் தண்ணீரில் புரோபிகோனசோல் 25 EC தெளிக்கவும்.",
+            "chemical_remedy_gu": "લક્ષણો દેખાતાની સાથે જ 1 મિલી/લિટર પાણીમાં પ્રોપિકોનાઝોલ 25 EC નો છંટકાવ કરો.",
+            "chemical_remedy_kn": "ಲಕ್ಷಣಗಳು ಕಾಣಿಸಿಕೊಂಡ ತಕ್ಷಣ 1 ಮಿಲಿ/ಲೀಟರ್ ನೀರಿನಲ್ಲಿ ಪ್ರೊಪಿಕೊನಾಜೋಲ್ 25 EC ಸಿಂಪಡಿಸಿ.",
+            "chemical_remedy_or": "ଲକ୍ଷଣ ଦେଖାଯିବା ମାତ୍ରେ 1 ମି.ଲି./ଲିଟର ପାଣିରେ ପ୍ରୋପିକୋନାଜୋଲ୍ 25 EC ସ୍ପ୍ରେ କରନ୍ତୁ।",
+            "chemical_remedy_ml": "ലക്ഷണങ്ങൾ കണ്ടാലുടൻ 1 മില്ലി/ലിറ്റർ വെള്ളത്തിൽ പ്രൊപികോണസോൾ 25 EC തളിക്കുക.",
+            "chemical_remedy_pa": "ਲੱਛਣ ਦਿਖਾਈ ਦਿੰਦੇ ਹੀ 1 ਮਿ.ਲੀ./ਲੀਟਰ ਪਾਣੀ ਵਿੱਚ ਪ੍ਰੋਪੀਕੋਨਾਜ਼ੋਲ 25 EC ਦਾ ਛਿੜਕਾਅ ਕਰੋ।"
+        },
+        "Termites": {
+            "simple_desc_en": "Soil-dwelling insects that feed on the roots and lower stems of the wheat plant.",
+            "simple_desc_hi": "मिट्टी में रहने वाले कीड़े जो गेहूं के पौधे की जड़ों और निचले तने को खा जाते हैं।",
+            "simple_desc_bn": "মাটিতে বসবাসকারী পোকা যা গমের গাছের শিকড় এবং নীচের কান্ড খায়।",
+            "simple_desc_pa": "ਮਿੱਟੀ ਵਿੱਚ ਰਹਿਣ ਵਾਲੇ ਕੀੜੇ ਜੋ ਕਣਕ ਦੇ ਪੌਦੇ ਦੀਆਂ ਜੜ੍ਹਾਂ ਅਤੇ ਹੇਠਲੇ ਤਣੇ ਨੂੰ ਖਾਂਦੇ ਹਨ।",
+            "simple_desc_mr": "मातीत राहणारे कीटक जे गव्हाच्या रोपाची मुळे आणि खालचे खोड खातात.",
+            "symptoms_en": "Plants dry up completely and can be easily pulled out from the soil. Roots show insect damage.",
+            "symptoms_hi": "पौधे पूरी तरह सूख जाते हैं और आसानी से उखड़ जाते हैं। जड़ों को नुकसान दिखता है।",
+            "symptoms_bn": "গাছ সম্পূর্ণ শুকিয়ে যায় এবং মাটি থেকে সহজে তোলা যায়। শিকড়ে পোকার ক্ষতি দেখা যায়।",
+            "symptoms_pa": "ਪੌਦੇ ਪੂਰੀ ਤਰ੍ਹਾਂ ਸੁੱਕ ਜਾਂਦੇ ਹਨ ਅਤੇ ਆਸਾਨੀ ਨਾਲ ਪੁੱਟੇ ਜਾ ਸਕਦੇ ਹਨ। ਜੜ੍ਹਾਂ ਨੂੰ ਨੁਕਸਾਨ ਦਿਸਦਾ ਹੈ।",
+            "symptoms_mr": "रोपे पूर्णपणे सुकतात आणि सहज उपटता येतात. मुळांना कीटकांचे नुकसान दिसते.",
+            "organic_remedy_en": "Apply well-rotted farmyard manure and use light irrigation to disturb termite colonies.",
+            "organic_remedy_hi": "सड़ी हुई गोबर की खाद डालें और दीमक की कॉलोनियों को नष्ट करने के लिए हल्की सिंचाई करें।",
+            "organic_remedy_bn": "পচা গোবর সার প্রয়োগ করুন এবং উইপোকার বাসা ধ্বংস করতে হালকা সেচ দিন।",
+            "organic_remedy_pa": "ਸੜੀ ਹੋਈ ਗੋਹੇ ਦੀ ਖਾਦ ਪਾਓ ਅਤੇ ਸਿਉਂਕ ਨੂੰ ਨਸ਼ਟ ਕਰਨ ਲਈ ਹਲਕੀ ਸਿੰਚਾਈ ਕਰੋ।",
+            "organic_remedy_mr": "कुजलेले शेणखत वापरा आणि वाळवीच्या वसाहती नष्ट करण्यासाठी हलके सिंचन करा.",
+            "chemical_remedy_en": "Treat seeds with Chlorpyriphos 20 EC @ 4ml/kg of seed before sowing.",
+            "chemical_remedy_hi": "बुवाई से पहले बीजों को क्लोरपायरीफोस 20 EC (4 मिली/किलो बीज) से उपचारित करें।",
+            "chemical_remedy_bn": "বপনের আগে বীজকে ক্লোরপাইরিফস ২০ ইসি (৪ মিলি/কেজি বীজ) দিয়ে শোধন করুন।",
+            "chemical_remedy_pa": "ਬਿਜਾਈ ਤੋਂ ਪਹਿਲਾਂ ਬੀਜਾਂ ਨੂੰ ਕਲੋਰਪਾਇਰੀਫੋਸ 20 EC (4 ਮਿ.ਲੀ./ਕਿਲੋ ਬੀਜ) ਨਾਲ ਸੋਧੋ।",
+            "chemical_remedy_mr": "पेरणीपूर्वी बियांवर क्लोरपायरीफॉस २० ईसी (४ मिली/किलो बियाणे) प्रक्रिया करा."
+        }
     },
-    "Yellow Rust": {
-      "simple_desc_en": "Fungal disease showing yellow stripes on leaves.",
-      "simple_desc_hi": "फफूंद रोग जिससे पत्तों पर पीली धारियां बन जाती हैं।",
-      "symptoms_en": "Yellow powdery deposits in rows.",
-      "symptoms_hi": "पत्तियों पर पीले रंग का पाउडर जैसा जमाव।",
-      "chemical_remedy_en": "Spray Propiconazole 25 EC (1ml/L).",
-      "chemical_remedy_hi": "प्रोपिकोनाज़ोल 25 EC (1ml/L) का छिड़काव करें।",
-      "organic_remedy_en": "Use rust-resistant varieties.",
-      "organic_remedy_hi": "रोग-प्रतिरोधी किस्मों का चुनाव करें।"
-    }
-  },
-  "Rice": {
-    "Stem Borer": {
-      "simple_desc_en": "Larvae that eat the stem from inside.",
-      "simple_desc_hi": "तने को अंदर से खाने वाला इल्ली जैसा कीड़ा।",
-      "symptoms_en": "Drying of central shoot (Dead Heart).",
-      "symptoms_hi": "बीच के तने का सूख जाना (डेड हार्ट)।",
-      "chemical_remedy_en": "Apply Cartap Hydrochloride 4G (10kg/acre).",
-      "chemical_remedy_hi": "कारटैप हाइड्रोक्लोराइड 4G (10kg/acre) डालें।",
-      "organic_remedy_en": "Use Pheromone traps.",
-      "organic_remedy_hi": "फेरोमोन ट्रैप का उपयोग करें।"
+    "Rice": {
+        "Stem Borer": {
+            "simple_desc_en": "One of the most destructive pests of rice, its larvae bore into the stem.",
+            "simple_desc_hi": "धान का सबसे विनाशकारी कीट, इसकी सुंडी तने के अंदर छेद कर देती है।",
+            "simple_desc_te": "వరికి అత్యంత విధ్వంసకర తెగుళ్ళలో ఒకటి, దీని లార్వా కాండంలోకి రంధ్రం చేస్తుంది.",
+            "simple_desc_pa": "ਝੋਨੇ ਦਾ ਸਭ ਤੋਂ ਵਿਨਾਸ਼ਕਾਰੀ ਕੀੜਾ, ਇਸ ਦੀ ਸੁੰਡੀ ਤਣੇ ਦੇ ਅੰਦਰ ਛੇਕ ਕਰ ਦਿੰਦੀ ਹੈ।",
+            "simple_desc_bn": "ধানের সবচেয়ে ধ্বংসাত্মক পোকাগুলির মধ্যে একটি, এর লার্ভা কাণ্ডে গর্ত করে।",
+            "symptoms_en": "Presence of 'Dead Hearts' in young plants and 'Whiteheads' (empty grains) at the panicle stage.",
+            "symptoms_hi": "शुरुआती चरण में बीच का तना सूख जाना (डेड हार्ट) और बाद में सफेद बालियां (खाली दाने) दिखना।",
+            "symptoms_te": "లేత మొక్కలలో 'డెడ్ హార్ట్స్' మరియు వెన్ను దశలో 'వైట్ హెడ్స్' (ఖాళీ గింజలు) ఉండటం.",
+            "symptoms_pa": "ਸ਼ੁਰੂਆਤੀ ਪੜਾਅ ਵਿੱਚ ਵਿਚਕਾਰਲਾ ਤਣਾ ਸੁੱਕ ਜਾਣਾ (ਡੈੱਡ ਹਾਰਟ) ਅਤੇ ਬਾਅਦ ਵਿੱਚ ਚਿੱਟੀਆਂ ਬੱਲੀਆਂ ਦਿਖਣਾ।",
+            "symptoms_bn": "কচি গাছে 'ডেড হার্ট' এবং পরবর্তীতে 'হোয়াইটহেড' (খালি দানা) দেখা যায়।",
+            "organic_remedy_en": "Install pheromone traps (5 per acre) and release Trichogramma egg parasitoids.",
+            "organic_remedy_hi": "प्रति एकड़ 5 फेरोमोन ट्रैप लगाएं और ट्राइकोग्रामा परजीवी छोड़ें।",
+            "organic_remedy_te": "ఎకరాకు 5 ఫెరోమోన్ ఉచ్చులను అమర్చండి మరియు ట్రైకోగ్రామా గుడ్డు పరాన్నజీవులను వదలండి.",
+            "organic_remedy_pa": "ਪ੍ਰਤੀ ਏਕੜ 5 ਫੇਰੋਮੋਨ ਟਰੈਪ ਲਗਾਓ ਅਤੇ ਟ੍ਰਾਈਕੋਗ੍ਰਾਮਾ ਪਰਜੀਵੀ ਛੱਡੋ।",
+            "organic_remedy_bn": "একর প্রতি ৫টি ফেরোমন ফাঁদ বসান এবং ট্রাইকোগ্রামা পরজীবী ছেড়ে দিন।",
+            "chemical_remedy_en": "Apply Cartap Hydrochloride 4G @ 10 kg/acre in standing water.",
+            "chemical_remedy_hi": "खड़े पानी में कार्टाप हाइड्रोक्लोराइड 4G (10 किलो/एकड़) का प्रयोग करें।",
+            "chemical_remedy_te": "నిలిచిన నీటిలో ఎకరాకు 10 కిలోల కార్టాప్ హైడ్రోక్లోరైడ్ 4G వేయండి.",
+            "chemical_remedy_pa": "ਖੜ੍ਹੇ ਪਾਣੀ ਵਿੱਚ ਕਾਰਟਾਪ ਹਾਈਡ੍ਰੋਕਲੋਰਾਈਡ 4G (10 ਕਿਲੋ/ਏਕੜ) ਦੀ ਵਰਤੋਂ ਕਰੋ।",
+            "chemical_remedy_bn": "দাঁড়ানো জলে কার্টাপ হাইড্রোক্লোরাইড ৪জি (১০ কেজি/একর) প্রয়োগ করুন।"
+        },
+        "Brown Plant Hopper (BPH)": {
+            "simple_desc_en": "Tiny brown insects that suck sap from the base of the rice plant, causing severe damage.",
+            "simple_desc_hi": "छोटे भूरे रंग के कीड़े जो धान के पौधे के निचले हिस्से से रस चूसते हैं, जिससे भारी नुकसान होता है।",
+            "simple_desc_mr": "लहान तपकिरी कीटक जे भाताच्या रोपाच्या खालून रस शोषतात, ज्यामुळे मोठे नुकसान होते.",
+            "simple_desc_pa": "ਛੋਟੇ ਭੂਰੇ ਕੀੜੇ ਜੋ ਝੋਨੇ ਦੇ ਪੌਦੇ ਦੇ ਹੇਠਲੇ ਹਿੱਸੇ ਤੋਂ ਰਸ ਚੂਸਦੇ ਹਨ, ਜਿਸ ਨਾਲ ਭਾਰੀ ਨੁਕसान ਹੁੰਦਾ ਹੈ।",
+            "simple_desc_bn": "ছোট বাদামী পোকা যা ধান গাছের গোড়া থেকে রস শুষে খায়, যার ফলে মারাত্মক ক্ষতি হয়।",
+            "symptoms_en": "Plants turn yellow and dry up rapidly in circular patches, a condition known as 'Hopper Burn'.",
+            "symptoms_hi": "पौधे गोल घेरे में पीले होकर तेजी से सूख जाते हैं, जिसे 'हॉपर बर्न' कहा जाता है।",
+            "symptoms_mr": "रोपे गोलाकार आकारात पिवळी पडतात आणि वेगाने सुकतात, ज्याला 'हॉपर बर्न' म्हणतात.",
+            "symptoms_pa": "ਪੌਦੇ ਗੋਲ ਘੇਰੇ ਵਿੱਚ ਪੀਲੇ ਹੋ ਕੇ ਤੇਜ਼ੀ ਨਾਲ ਸੁੱਕ ਜਾਂਦੇ ਹਨ, ਜਿਸ ਨੂੰ 'ਹਾਪਰ ਬਰਨ' ਕਿਹਾ ਜਾਂਦਾ ਹੈ।",
+            "symptoms_bn": "গাছগুলি গোলাকার আকারে হলুদ হয়ে দ্রুত শুকিয়ে যায়, যাকে 'হপার বার্ন' বলা হয়।",
+            "organic_remedy_en": "Avoid excessive nitrogen fertilizer. Spray Neem Kernel Extract (NSKE 5%).",
+            "organic_remedy_hi": "यूरिया (नाइट्रोजन) का अधिक प्रयोग न करें। नीम के बीज के अर्क (NSKE 5%) का छिड़काव करें।",
+            "organic_remedy_mr": "युरियाचा अतिवापर टाळा. कडुनिंबाच्या अर्काची (NSKE 5%) फवारणी करा.",
+            "organic_remedy_pa": "ਯੂਰੀਆ ਦੀ ਜ਼ਿਆਦਾ ਵਰਤੋਂ ਨਾ ਕਰੋ। ਨਿੰਮ ਦੇ ਬੀਜ ਦੇ ਅਰਕ (NSKE 5%) ਦਾ ਛਿੜਕਾਅ ਕਰੋ।",
+            "organic_remedy_bn": "অতিরিক্ত নাইট্রোজেন সার এড়িয়ে চলুন। নিম বীজের নির্যাস (NSKE ৫%) স্প্রে করুন।",
+            "chemical_remedy_en": "Spray Pymetrozine 50 WG @ 120g/acre aiming at the base of the plant.",
+            "chemical_remedy_hi": "पौधे के निचले हिस्से को लक्ष्य करते हुए पाइमेट्रोज़िन 50 WG (120 ग्राम/एकड़) का छिड़काव करें।",
+            "chemical_remedy_mr": "रोपाच्या खालच्या भागाला लक्ष्य करून पायमेट्रोझिन 50 WG (120 ग्रॅम/एकर) फवारणी करा.",
+            "chemical_remedy_pa": "ਪੌਦੇ ਦੇ ਹੇਠਲੇ ਹਿੱਸੇ ਵੱਲ ਪਾਈਮੇਟ੍ਰੋਜ਼ਿਨ 50 WG (120 ਗ੍ਰਾਮ/ਏਕੜ) ਦਾ ਛਿੜਕਾਅ ਕਰੋ।",
+            "chemical_remedy_bn": "গাছের গোড়ায় পাইমেট্রোজিন ৫০ ডব্লিউজি (১২০ গ্রাম/একর) স্প্রে করুন।"
+        }
     },
-    "Brown Plant Hopper": {
-      "simple_desc_en": "Insects that cause 'Hopper Burn' in rice fields.",
-      "simple_desc_hi": "धान के पौधों को सुखाने वाला भूरा फुदका कीड़ा।",
-      "symptoms_en": "Circular patches of dried yellow plants.",
-      "symptoms_hi": "खेत में पौधों का गोल घेरे में सूखना।",
-      "chemical_remedy_en": "Spray Pymetrozine 50 WG (0.6g/L).",
-      "chemical_remedy_hi": "पाइमेट्रोज़िन 50 WG (0.6g/L) का स्प्रे करें।",
-      "organic_remedy_en": "Drain the field water for 3-4 days.",
-      "organic_remedy_hi": "खेत का पानी 3-4 दिनों के लिए निकाल दें।"
+    "Cotton": {
+        "Pink Bollworm": {
+            "simple_desc_en": "A major cotton pest that attacks the developing bolls and damages the lint.",
+            "simple_desc_hi": "कपास का प्रमुख कीट जो विकासशील टिंडों (Bolls) पर हमला करता है और रुई को खराब करता है।",
+            "simple_desc_gu": "કપાસની મુખ્ય જીવાત જે વિકસતા ઝીંડવા (Bolls) પર હુમલો કરે છે અને રૂને નુકસાન પહોંચાડે છે.",
+            "simple_desc_mr": "कापसाची प्रमुख कीड जी विकसित होणाऱ्या बोंडांवर हल्ला करते आणि कापूस खराब करते.",
+            "simple_desc_pa": "ਕਪਾਹ ਦਾ ਪ੍ਰਮੁੱਖ ਕੀੜਾ ਜੋ ਟੀਂਡਿਆਂ 'ਤੇ ਹਮਲਾ ਕਰਦਾ ਹੈ ਅਤੇ ਰੂੰ ਨੂੰ ਖਰਾਬ ਕਰਦਾ ਹੈ।",
+            "symptoms_en": "Rosette flowers (petals tied together) and exit holes on the bolls.",
+            "symptoms_hi": "फूलों का गुच्छे की तरह मुड़ जाना और कपास के टिंडों पर छेद दिखाई देना।",
+            "symptoms_gu": "ફૂલોનું ગુચ્છાની જેમ વળી જવું અને કપાસના ઝીંડવા પર છિદ્રો દેખાવા.",
+            "symptoms_mr": "फुले गुच्छासारखी दुमडणे आणि कापसाच्या बोंडांवर छिद्रे दिसणे.",
+            "symptoms_pa": "ਫੁੱਲਾਂ ਦਾ ਗੁੱਛੇ ਵਾਂਗ ਮੁੜ ਜਾਣਾ ਅਤੇ ਕਪਾਹ ਦੇ ਟੀਂਡਿਆਂ 'ਤੇ ਛੇਕ ਦਿਖਾਈ ਦੇਣਾ।",
+            "organic_remedy_en": "Avoid extending the crop cycle and use Pheromone traps for mass trapping.",
+            "organic_remedy_hi": "फसल चक्र को लंबा करने से बचें और कीटों को पकड़ने के लिए फेरोमोन ट्रैप का उपयोग करें।",
+            "organic_remedy_gu": "પાક ચક્રને લંબાવવાનું ટાળો અને ફેરોમોન ટ્રેપનો ઉપયોગ કરો.",
+            "organic_remedy_mr": "पीक चक्र वाढवणे टाळा आणि फेरोमोन ट्रॅपचा वापर करा.",
+            "organic_remedy_pa": "ਫ਼ਸਲ ਚੱਕਰ ਨੂੰ ਲੰਬਾ ਕਰਨ ਤੋਂ ਬਚੋ ਅਤੇ ਫੇਰੋਮੋਨ ਟਰੈਪ ਦੀ ਵਰਤੋਂ ਕਰੋ।",
+            "chemical_remedy_en": "Spray Thiodicarb 75 WP @ 250g/acre when pest crosses economic threshold.",
+            "chemical_remedy_hi": "कीट का प्रकोप बढ़ने पर थायोडीकार्ब 75 WP (250 ग्राम/एकड़) का छिड़काव करें।",
+            "chemical_remedy_gu": "જીવાતનો ઉપદ્રવ વધે ત્યારે થાયોડિકાર્બ 75 WP (250 ગ્રામ/એકર) નો છંટકાવ કરો.",
+            "chemical_remedy_mr": "कीटकांचा प्रादुर्भाव वाढल्यास थायोडीकार्ब 75 WP (250 ग्रॅम/एकर) फवारणी करा.",
+            "chemical_remedy_pa": "ਕੀੜੇ ਦਾ ਹਮਲਾ ਵਧਣ 'ਤੇ ਥਾਇਓਡਿਕਾਰਬ 75 WP (250 ਗ੍ਰਾਮ/ਏਕੜ) ਦਾ ਛਿੜਕਾਅ ਕਰੋ।"
+        }
+    },
+    "Tomato": {
+        "Fruit Borer": {
+            "description_en": "Caterpillars that bore into the fruits and feed on internal contents, rotting the tomato.",
+            "description_hi": "सुंडियां (इल्लियां) जो टमाटर के फलों में छेद कर देती हैं और अंदर का हिस्सा खाकर फल सड़ा देती हैं।",
+            "description_mr": "अळ्या ज्या टोमॅटोच्या फळांना छिद्र पाडतात आणि आतील भाग खाऊन फळ कुजवतात.",
+            "description_te": "టొమాటో పండ్లలో రంధ్రాలు చేసి లోపలి భాగాన్ని తిని పండ్లను కుళ్ళబెట్టే గొంగళి పురుగులు.",
+            "description_bn": "শূককীট যা টমেটো ফলের ছিদ্র করে এবং ভেতরের অংশ খেয়ে ফল পচিয়ে দেয়।",
+            "symptoms_en": "Circular holes on the fruits; half the caterpillar's body is often seen outside the fruit.",
+            "symptoms_hi": "फलों पर गोल छेद; अक्सर सुंडी का आधा शरीर फल के बाहर दिखाई देता है।",
+            "symptoms_mr": "फळांवर गोल छिद्रे; अळीचे निम्मे शरीर अनेकदा फळाच्या बाहेर दिसते.",
+            "symptoms_te": "పండ్లపై గుండ్రని రంధ్రాలు; గొంగళి పురుగు సగం శరీరం పండు వెలుపల కనిపిస్తుంది.",
+            "symptoms_bn": "ফলের উপর গোলাকার গর্ত; প্রায়শই শূককীটের অর্ধেক শরীর ফলের বাইরে দেখা যায়।",
+            "organic_remedy_en": "Plant African Marigold as a trap crop. Spray Neem oil (50 ppm).",
+            "organic_remedy_hi": "खेत के चारों ओर गेंदे (Marigold) के पौधे लगाएं। नीम के तेल का छिड़काव करें।",
+            "organic_remedy_mr": "शेताभोवती झेंडूची झाडे लावा. कडुनिंबाच्या तेलाची फवारणी करा.",
+            "organic_remedy_te": "పొలం చుట్టూ బంతి పూల మొక్కలు నాటండి. వేప నూనెను పిచికారీ చేయండి.",
+            "organic_remedy_bn": "মাঠের চারপাশে গাঁদা ফুলের গাছ লাগান। নিম তেল স্প্রে করুন।",
+            "chemical_remedy_en": "Spray Spinosad 45 SC @ 60 ml/acre at the time of fruit setting.",
+            "chemical_remedy_hi": "फल बनते समय स्पिनोसैड 45 SC (60 मिली/एकड़) का छिड़काव करें।",
+            "chemical_remedy_mr": "फळ धारणाच्या वेळी स्पिनोसॅड 45 SC (60 मिली/एकर) फवारणी करा.",
+            "chemical_remedy_te": "పండ్లు ఏర్పడే సమయంలో స్పినోసాడ్ 45 SC (60 మి.లీ/ఎకరా) పిచికారీ చేయండి.",
+            "chemical_remedy_bn": "ফল আসার সময় স্পিনোসাড ৪৫ এসসি (৬০ মিলি/একর) স্প্রে করুন।"
+        }
     }
-  },
-  "Sugarcane": {
-    "Red Rot": {
-      "simple_desc_en": "Serious fungal disease of sugarcane stalks.",
-      "simple_desc_hi": "गन्ने के तने का कैंसर जैसा लाल सड़न रोग।",
-      "symptoms_en": "Internal reddening of the pith with white patches.",
-      "symptoms_hi": "गन्ने को चीरने पर अंदर लाल रंग और सफेद धब्बे दिखना।",
-      "chemical_remedy_en": "Sett treatment with Carbendazim.",
-      "chemical_remedy_hi": "कार्बेन्डाजिम से बीजों (सेट्स) का उपचार करें।",
-      "organic_remedy_en": "Crop rotation and healthy seed selection.",
-      "organic_remedy_hi": "फसल चक्र अपनाएं और स्वस्थ बीज चुनें।"
-    }
-  },
-  "Tomato": {
-    "Early Blight": {
-      "simple_desc_en": "Fungal spots on leaves starting from bottom.",
-      "simple_desc_hi": "टमाटर के पत्तों पर नीचे से शुरू होने वाले काले धब्बे।",
-      "symptoms_en": "Concentric rings (target spots) on leaves.",
-      "symptoms_hi": "पत्तियों पर गोल छल्लेदार काले धब्बे।",
-      "chemical_remedy_en": "Spray Mancozeb (2g/L).",
-      "chemical_remedy_hi": "मेनकोजेब (2g/L) का छिड़काव करें।",
-      "organic_remedy_en": "Mulching and drip irrigation.",
-      "organic_remedy_hi": "मल्चिंग करें और ड्रिप सिंचाई का उपयोग करें।"
-    }
-  }
 }
