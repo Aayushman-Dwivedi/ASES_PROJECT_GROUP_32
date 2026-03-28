@@ -312,7 +312,7 @@ elif st.session_state.auth_mode is None:
                             MY_API_KEY = st.secrets["GEMINI_API_KEY"]
                             
                             genai.configure(api_key=MY_API_KEY)
-                            model = genai.GenerativeModel('gemini-1.5-flash')
+                            model = genai.GenerativeModel('gemini-1.5-flash-latest')
                             prompt = f"You are an expert agricultural AI. Analyze this image. Identify the crop disease/pest OR machinery issue. Provide response in {selected_lang}. Format strictly with headings: 'Diagnosis', 'Symptoms', 'Organic Remedy', 'Chemical Remedy'. Use emojis."
                             
                             with st.spinner(t("Analyzing Pixels...")): 
