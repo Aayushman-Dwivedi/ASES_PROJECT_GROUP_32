@@ -1,0 +1,4 @@
+# .gitignore
+.streamlit/secrets.toml
+agri_khata.db
+__pycache__/
