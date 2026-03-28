@@ -295,6 +295,8 @@ elif st.session_state.auth_mode is None:
 
             elif st.session_state.agri_tab == "AI":
                 st.markdown(f"### 🩺 {t('AI Image Consultation')}")
+                
+                # यहाँ से हमने API Key का इनपुट बॉक्स हमेशा के लिए हटा दिया है
                 uploaded_file = st.file_uploader(t("Upload Crop or Machine Photo"), type=['jpg', 'png', 'jpeg'])
                 
                 if uploaded_file:
@@ -303,21 +305,24 @@ elif st.session_state.auth_mode is None:
                         st.markdown("<div class='img-box anim-block d-2'>", unsafe_allow_html=True)
                         st.image(uploaded_file, use_container_width=True)
                         st.markdown("</div>", unsafe_allow_html=True)
-                    
+                        
                     if st.button(t("⚡ START AI ANALYSIS"), type="primary"):
                         try:
                             import google.generativeai as genai
                             from PIL import Image
                             
+                            # यह सीधे आपकी Cloud Secrets से Key ले लेगा
                             MY_API_KEY = st.secrets["GEMINI_API_KEY"]
-                            
                             genai.configure(api_key=MY_API_KEY)
-                            model = genai.GenerativeModel('gemini-1.5-flash-latest')
-                            prompt = f"You are an expert agricultural AI. Analyze this image. Identify the crop disease/pest OR machinery issue. Provide response in {selected_lang}. Format strictly with headings: 'Diagnosis', 'Symptoms', 'Organic Remedy', 'Chemical Remedy'. Use emojis."
+                            
+                            # मॉडल का बिल्कुल सही और स्टैंडर्ड नाम
+                            model = genai.GenerativeModel('gemini-1.5-flash')
+                            
+                            prompt = f"You are an expert agricultural AI. Analyze this image. Identify the crop disease/pest OR machinery issue. Provide the response strictly in {selected_lang} language. Format the response strictly with these exact headings: 'Diagnosis', 'Symptoms', 'Organic Remedy', 'Chemical Remedy'. Use emojis."
                             
                             with st.spinner(t("Analyzing Pixels...")): 
                                 response = model.generate_content([prompt, Image.open(uploaded_file)])
-                            
+                                
                             st.success(t("Analysis Complete!"))
                             st.markdown(f"<div class='full-card anim-block d-2'>{response.text}</div>", unsafe_allow_html=True)
                         except Exception as e: 
