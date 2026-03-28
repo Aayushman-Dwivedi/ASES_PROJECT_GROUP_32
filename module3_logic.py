@@ -315,8 +315,7 @@ elif st.session_state.auth_mode is None:
                             MY_API_KEY = st.secrets["GEMINI_API_KEY"]
                             genai.configure(api_key=MY_API_KEY)
                             
-                            # मॉडल का बिल्कुल सही और स्टैंडर्ड नाम
-                            model = genai.GenerativeModel('gemini-1.5-flash')
+                            model = genai.GenerativeModel('gemini-2.5-flash')
                             
                             prompt = f"You are an expert agricultural AI. Analyze this image. Identify the crop disease/pest OR machinery issue. Provide the response strictly in {selected_lang} language. Format the response strictly with these exact headings: 'Diagnosis', 'Symptoms', 'Organic Remedy', 'Chemical Remedy'. Use emojis."
                             
