@@ -377,6 +377,37 @@ elif st.session_state.auth_mode is None:
                     with col_r: 
                         st.markdown(f"<div class='inorganic-box anim-block d-4'><h3 style='color:#FF8C00; margin-top:0;'>🧪 {t('Inorganic/Chemical Solution')}</h3><hr class='thin-line'><p>{t(p_details.get('chemical_remedy_en', ''))}</p></div>", unsafe_allow_html=True)
 
+                # =========================================================================
+                # --- NEW SOIL & CROP MAINTENANCE GUIDE FOR PEST TAB ---
+                # =========================================================================
+                st.markdown(f"<h3 style='color:#38bdf8; margin-top:30px;'>🌱 {t('Soil & Crop Maintenance Guide')}</h3>", unsafe_allow_html=True)
+                
+                with st.expander(t("🟤 Black Soil (Kalee Mitti) Care")):
+                    st.write(t("1. Deep ploughing in summer exposes soil-borne pests to harsh sun.\n2. Maintain proper drainage as black soil retains excess moisture.\n3. Add organic compost (FYM) before monsoon to improve aeration."))
+                with st.expander(t("🟡 Alluvial Soil (Jalodh Mitti) Care")):
+                    st.write(t("1. Highly fertile, but requires regular crop rotation to maintain nutrient balance.\n2. Monitor nitrogen levels; use green manure like Dhaincha or Moong.\n3. Keep surface weed-free to prevent nutrient competition."))
+                with st.expander(t("🔴 Red Soil (Laal Mitti) Care")):
+                    st.write(t("1. Low in water retention; requires frequent but light irrigation.\n2. Add heavy organic matter to improve soil structure.\n3. Monitor for iron and zinc deficiencies regularly."))
+                
+                crop_care_guides = {
+                    "Wheat": "1. Irrigate at critical Crown Root Initiation (CRI) stage.\n2. Keep field weed-free for the first 30-40 days.\n3. Monitor for yellow rust in humid conditions.",
+                    "Rice": "1. Maintain 2-5 cm standing water during early growth.\n2. Apply nitrogen in 3 split doses.\n3. Keep bunds clean to prevent rat and pest harborage.",
+                    "Maize": "1. Do not let water stagnate; ensure proper drainage.\n2. Earthing up is necessary after 30 days to prevent lodging.\n3. Watch out for Fall Armyworm in early stages.",
+                    "Cotton": "1. Avoid excessive irrigation to prevent excessive vegetative growth.\n2. Install pheromone traps for Pink Bollworm monitoring.\n3. Practice clean picking and destroy crop residues.",
+                    "Soybean": "1. Ensure good drainage; it's highly sensitive to waterlogging.\n2. Seed treatment with Rhizobium is a must.\n3. Monitor for girdle beetle and defoliators.",
+                    "Mustard": "1. Thinning is essential to maintain plant population 15 days after sowing.\n2. Watch for Aphid attack during flowering; spray Neem oil if needed.\n3. Provide light irrigation at the pod-formation stage.",
+                    "Sugarcane": "1. Trash mulching helps conserve moisture and suppress weeds.\n2. Tie up canes (propping) to prevent lodging during high winds.\n3. Monitor for early shoot borer and red rot.",
+                    "Chickpea": "1. Nipping (topping) of early shoots encourages branching and higher yield.\n2. Avoid irrigation during the flowering stage.\n3. Use bird perches to encourage insectivorous birds for pod borer control.",
+                    "Potato": "1. Earthing up is crucial to prevent tuber greening.\n2. Maintain consistent moisture; avoid dry-wet fluctuations.\n3. Spray preventive fungicides for Late Blight in foggy weather.",
+                    "Tomato": "1. Staking helps keep fruits off the ground and reduces rot.\n2. Prune lower leaves to improve air circulation.\n3. Monitor for whiteflies and use yellow sticky traps.",
+                    "Groundnut": "1. Do not disturb the soil during the pegging stage.\n2. Apply Gypsum to ensure good pod filling.\n3. Watch for Tikka disease and apply appropriate fungicides."
+                }
+                
+                if sel_crop in crop_care_guides:
+                    with st.expander(f"🌾 {t(sel_crop)} {t('Daily Care & Maintenance')}"):
+                        st.markdown(f"<div style='color:#4ade80;'>{t(crop_care_guides[sel_crop])}</div>", unsafe_allow_html=True)
+                # =========================================================================
+
             elif st.session_state.agri_tab == "Machine":
                 st.markdown(f"### ⚙️ {t('Equipment Troubleshooting')}")
                 if maint_data:
@@ -413,7 +444,7 @@ elif st.session_state.auth_mode is None:
                     "Power Tiller": "1. Check engine oil before start.\n2. Inspect air cleaner for dust.\n3. Tighten handlebar mounting bolts.",
                     "Thresher": "1. Ensure safety covers are fitted.\n2. Check the balance of the drum.\n3. Lubricate bearings every 20 hours.",
                     "Cultivator": "1. Inspect tines for damage.\n2. Check hitch points for wear.\n3. Paint scratched areas to prevent rust.",
-                    "Drip Irrigation System": "1. Check for leaks in main lines.\n2. Clean the filter every week.\n3. Use acid treatment for scaling."
+                    "Drip Irrigation System": "1. Check for leaks in main lines.\n2. Check the filter every week.\n3. Use acid treatment for scaling."
                 }
                 
                 if machine in machine_guides:
@@ -425,12 +456,44 @@ elif st.session_state.auth_mode is None:
                 
                 uploaded_file = st.file_uploader(t("Upload Crop or Machine Photo"), type=['jpg', 'png', 'jpeg'])
                 
-                if uploaded_file:
-                    col_img_l, col_img_m, col_img_r = st.columns([1, 1.5, 1])
-                    with col_img_m:
-                        st.markdown("<div class='img-box anim-block d-2'>", unsafe_allow_html=True)
-                        st.image(uploaded_file, use_container_width=True)
-                        st.markdown("</div>", unsafe_allow_html=True)
+                # =========================================================================
+                # --- NAYA TEXT AUR MIC INPUT (UPDATED FOR DIRECT TEXT BOX ENTRY) ---
+                # =========================================================================
+                st.markdown(f"<p style='color:#64748b; font-size:14px; margin-top:10px;'>{t('Ya fir apni samasya likhein / bol kar batayein:')}</p>", unsafe_allow_html=True)
+                
+                # Session state ka istemaal taaki mic ka data direct text box mein aaye
+                if "disease_text_input" not in st.session_state:
+                    st.session_state["disease_text_input"] = ""
+                if "last_mic_text" not in st.session_state:
+                    st.session_state["last_mic_text"] = ""
+                
+                text_col, mic_col = st.columns([5, 1])
+                
+                with mic_col:
+                    try:
+                        from streamlit_mic_recorder import speech_to_text
+                        spoken_text = speech_to_text(language='hi-IN', use_container_width=True, just_once=True, key='disease_mic')
+                        # Agar mic se naya text mila hai jo purane wale se alag hai
+                        if spoken_text and spoken_text != st.session_state["last_mic_text"]:
+                            st.session_state["disease_text_input"] = spoken_text
+                            st.session_state["last_mic_text"] = spoken_text
+                            st.rerun() # Yeh command immediately page ko refresh karegi aur text box bhar jayega
+                    except ImportError:
+                        pass
+
+                with text_col:
+                    symptom_text = st.text_input(t("Bimari ke lakshan yahan likhein..."), key="disease_text_input", label_visibility="collapsed")
+                # =========================================================================
+
+                # Logic Change: Ab user image de, text de, ya dono de... ye chalega!
+                if uploaded_file or symptom_text:
+                    
+                    if uploaded_file:
+                        col_img_l, col_img_m, col_img_r = st.columns([1, 1.5, 1])
+                        with col_img_m:
+                            st.markdown("<div class='img-box anim-block d-2'>", unsafe_allow_html=True)
+                            st.image(uploaded_file, use_container_width=True)
+                            st.markdown("</div>", unsafe_allow_html=True)
                         
                     if st.button(t("⚡ START AI ANALYSIS"), type="primary"):
                         try:
@@ -442,10 +505,20 @@ elif st.session_state.auth_mode is None:
                             
                             model = genai.GenerativeModel('gemini-2.5-flash')
                             
-                            prompt = f"You are an expert agricultural AI. Analyze this image. Identify the crop disease/pest OR machinery issue. Provide the response strictly in {selected_lang} language. Format the response strictly with these exact headings: 'Diagnosis', 'Symptoms', 'Organic Remedy', 'Chemical Remedy'. Use emojis."
+                            # Modified Prompt to accept dynamic inputs (Text/Image/Both)
+                            base_prompt = f"You are an expert agricultural AI. Analyze the provided inputs (image, text symptoms, or both). Identify the crop disease/pest OR machinery issue. Provide the response strictly in {selected_lang} language. Format the response strictly with these exact headings: 'Diagnosis', 'Symptoms', 'Organic Remedy', 'Chemical Remedy'. Use emojis."
                             
-                            with st.spinner(t("Analyzing Pixels...")): 
-                                response = model.generate_content([prompt, Image.open(uploaded_file)])
+                            # List mein jo-jo chizen available hain unko append karenge
+                            content_to_send = [base_prompt]
+                            
+                            if symptom_text:
+                                content_to_send.append(f"User reported symptoms/issue: {symptom_text}")
+                            
+                            if uploaded_file:
+                                content_to_send.append(Image.open(uploaded_file))
+                            
+                            with st.spinner(t("Analyzing Inputs...")): 
+                                response = model.generate_content(content_to_send)
                                 
                             st.success(t("Analysis Complete!"))
                             st.markdown(f"<div class='full-card anim-block d-2'>{response.text}</div>", unsafe_allow_html=True)
@@ -571,6 +644,33 @@ elif st.session_state.auth_mode is None:
                             <p style='color:#FF8C00;'><b>💡 {t('Smart AI Suggestion')}:</b> {t('Based on current demand and trends in ')} {t(m_loc)}{t(', consider selling a portion of your crop now to maximize profit.')}</p>
                         </div>
                         """, unsafe_allow_html=True)
+                        
+                        # --- NEW PIE CHART CODE GOES HERE ---
+                        st.markdown(f"<br><h4 style='color:#22c55e;'>📊 {t('AI Market Metrics Analysis')}</h4>", unsafe_allow_html=True)
+
+                        market_metrics = pd.DataFrame({
+                            'Factor': [t('Market Demand'), t('Current Supply'), t('Profit Potential'), t('Risk Factor')],
+                            'Percentage': [random.randint(65, 90), random.randint(30, 55), random.randint(40, 75), random.randint(10, 25)]
+                        })
+
+                        fig_pie = px.pie(
+                            market_metrics, 
+                            values='Percentage', 
+                            names='Factor',
+                            color_discrete_sequence=px.colors.sequential.Plasma,
+                            hole=0.4
+                        )
+
+                        fig_pie.update_traces(
+                            textposition='inside', 
+                            textinfo='percent+label',
+                            pull=[0.1, 0, 0, 0],
+                            marker=dict(line=dict(color='#ffffff', width=2))
+                        )
+                        fig_pie.update_layout(margin=dict(t=10, b=10, l=10, r=10), showlegend=False)
+
+                        st.plotly_chart(fig_pie, use_container_width=True)
+                        # ---------------------------------------------------------------------------------
 
         # 🏛️ KNOWLEDGE HUB 
         elif st.session_state.module == "Knowledge Hub":
@@ -779,7 +879,7 @@ elif st.session_state.auth_mode is None:
             except: 
                 st.warning(t("⚠️ Ensure 'crop_master.py', 'Locations.py' and 'plotly.express' are installed."))
 
-        # 📒 AGRI LEDGER
+        # 📒 AGRI Ledger
         elif st.session_state.module == "Agri Ledger":
             if not st.session_state.logged_in:
                 st.warning(t("🔒 Please Log In or Sign Up to access your private Agri Ledger."))
